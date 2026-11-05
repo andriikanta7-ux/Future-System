@@ -3265,3 +3265,65 @@ footer {
         text-align: center;
     }
 }
+
+
+
+/* =========================
+   GIT REPO ANALYZER PREVIEW
+========================= */
+
+.code-preview {
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    padding: 28px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: linear-gradient(145deg, #101b2b, #07111e);
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 7px;
+}
+
+.code-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #ff6b6b;
+}
+
+.code-dot:nth-child(2) {
+    background: #ffd166;
+}
+
+.code-dot:nth-child(3) {
+    background: #06d6a0;
+}
+
+.code-preview pre {
+    width: 100%;
+    margin: 22px 0 0;
+    overflow-x: auto;
+    color: #baff3d;
+    font: 13px/1.8 "DM Mono", monospace;
+    white-space: pre;
+}
+
+.code-preview code {
+    color: #9edcff;
+}
+
+@media (max-width: 480px) {
+    .code-preview {
+        min-height: 220px;
+        padding: 18px;
+    }
+
+    .code-preview pre {
+        font-size: 11px;
+    }
+}
+
