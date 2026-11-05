@@ -3161,14 +3161,20 @@ footer {
     aspect-ratio: 16 / 10;
 }
 
+.project-image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px 16px 0 0;
+    background: #080d16;
+}
+
 .project-image img {
     width: 100%;
-    height: auto;
-    min-height: 200px;
+    height: 280px;
     display: block;
-    object-fit: contain;
-    opacity: 1;
-    visibility: visible;
+    object-fit: cover;
+    object-position: top center;
     transition: transform 0.6s;
 }
 
