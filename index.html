@@ -394,6 +394,60 @@
       </div>
     </div>
   </article>
+  
+  <article class="project-card reveal">
+    <div class="project-image">
+      <div class="code-preview">
+        <span class="code-dot"></span>
+        <span class="code-dot"></span>
+        <span class="code-dot"></span>
+        <pre><code>
+import requests
+
+def analyze_repository(owner, repo):
+    url = f"https://api.github.com/repos/{owner}/{repo}"
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        return response.json()
+
+    return None
+
+print("Repository Analyzer")
+        </code></pre>
+      </div>
+      <span class="project-label">PYTHON PROJECT</span>
+    </div>
+
+    <div class="project-content">
+      <p class="eyebrow">02 / PYTHON DEVELOPMENT</p>
+      <h3>GIT REPO ANALYZER</h3>
+
+      <p class="project-description">
+        A Python-based tool designed to analyze GitHub repositories
+        using the GitHub API and generate structured repository insights.
+      </p>
+
+      <div class="project-tech">
+        <span>Python</span>
+        <span>GitHub API</span>
+        <span>Requests</span>
+        <span>OpenAI API</span>
+      </div>
+
+      <div class="project-features">
+        <p>✓ GitHub repository analysis</p>
+        <p>✓ Repository file structure scanning</p>
+        <p>✓ API integration</p>
+        <p>✓ AI-powered report generation</p>
+      </div>
+
+      <div class="project-actions">
+        <a class="button" href="https://github.com/andriikanta7-ux/git-repo-analyzer" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </div>
+  </article>
+
 </section>
 
       <section class="solutions section-shell" id="solutions">
